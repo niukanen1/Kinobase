@@ -1,13 +1,163 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body { 
+    margin: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.upper-header { 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    background-color:  rgb(59, 59, 255);
+}
+
+.phrase-above { 
+    color: white;
+    font-family: sans-serif;
+    font-size: xx-large;
+}
+
+.phrase-below { 
+    color: rgb(145, 145, 145);
+    font-family: sans-serif;
+}
+
+
+.links-field { 
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(59, 59, 255);
+}
+
+.links { 
+    color: rgb(255, 255, 255);
+    font-size: large;
+    font-family: sans-serif;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.links:hover { 
+    cursor: pointer;
+}
+.links:active { 
+    background-color:  rgb(48, 48, 253);
+}
+
+.filmcard-pic { 
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 10px;
+} 
+
+.Main-page { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.part-classic { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px 10px;
+}
+.part-title { 
+    display: flex;
+    font-family: sans-serif;
+    font-size: x-large;
+    justify-content: center;
+}
+.Main-part-films { 
+    /* background-color: antiquewhite; */
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+
+.filmpage { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filmpage-title {
+    font-family: sans-serif;
+}
+
+.description-text { 
+    max-width: 600px;
+    background-color: rgb(230, 230, 230);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.description {
+    font-family: sans-serif;
+    display: flex;
+    margin-top: 20px;
+}
+
+.filmlist-title { 
+    text-align: center;
+    font-size: xx-large;
+    font-family: sans-serif;
+}
+
+.filmlist-body { 
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.contact-body { 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+input { 
+    width: 200px;
+    margin-top: 10px;
+}
+
+textarea { 
+    margin-top: 10px;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    border: 2px solid rgb(167, 167, 167);
+    width: 250px;
+    height: 200px;
+    resize: none;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+textarea:focus { 
+    border: 2.5px solid rgb(0, 0, 0);
+}
+
+.submit-btn { 
+    font-family: sans-serif;
+    background-color: rgb(230, 230, 230);
+    padding: 5px;
+    margin-top: 10px;
+}
+.submit-btn:hover { 
+    cursor: pointer;
 }
